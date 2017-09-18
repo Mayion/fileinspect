@@ -33,15 +33,15 @@ ___
 ### (2) Current Statements/Events;
 **What are statements?** They are events with the ability to be fired independently, without or after an "**if statement**".
 
-**( ) - Optional Value | < > - Required Value**
+**( ) - Optional Value | « » - Required Value**
 
-> If statement - Script Syntax: **if** __< method >__ __< operator >__ __< input >__
->- **< Method >**: Is a value retrievable from the program
->- **< Operator >**: Allows for comparison between the Method retrieved value and the < input >
->- **< Input >**: Value given by the user in comparison with the Method
+> If statement - Script Syntax: **if** __«method»__ __«operator»__ __«input»__
+>- **«Method»**: Is a value retrievable from the program
+>- **«Operator»**: Allows for comparison between the Method retrieved value and the **«input»**
+>- **«Input»**: Value given by the user in comparison with the Method
 
-> Messagebox - Script Syntax: **messagebox** **[< text >, (style)]**
->- **< text >** is the message the user wishes to prompt
+> Messagebox - Script Syntax: **messagebox** **[«text», (style)]**
+>- **«text»** is the message the user wishes to prompt
 >- **(style)** is the messagebox style, either **information**, **critical** or **exclamation**.
 
 > **Reload/Restart/Reopen** - Any of these events reload the program
@@ -93,13 +93,13 @@ ___
 File Inspect's scripting language strong point is the ability to dodge and foresee possible code errors, thus most common mistakes the user may make is already countered, which includes comparisons.
 
 ### FAQ:
-**What's an array?** It's a list of values given to be compared against a Method value, say MD5 hashes or to be compared against an array list.
+**What's an array?** It's a list of values, each assigned with its own ID (Referred to as "index"), which can be compared against another array list, singular value or to be overwritten completely by either if it supports Read/Write.
 
-**What if a method does not support array inputs but was compared against one?** This specific code line will be dodged and not executed while returning compilation error to notify the user.
+**What if a method does not support array inputs but was assigned with one?** This specific code line will be dodged and not executed while returning compilation error to notify the user.
 
-**What if a method returns an array list but was compared against a singular value?** It will loop within the method's array list and return true if found.
+**What if a method returns an array list but was compared against a singular value?** It will loop within the method's array list and return true if the singular input value is found within the array. (Supports overwriting if the method allows it)
 
-**What if a method returns a singular value but was compared against an array list?** It will loop within the given array and return true if the method's value is found.
+**What if a method returns a singular value but was compared against an array list?** It will loop within the given array and return true if the method's value is found within. (Does not support overwritting)
 
 **All methods and their array leniency are listed at _section (3)_** 
 
@@ -112,6 +112,8 @@ if file.md5 = 1D420D66250BCAAAED05724FB34008CF//D01628AF9F7FB3F415B357D446FBE6D9
 ```
 
 **All values in the array list are separated by "//". Any spaces found at the start or end of an array value are ignored when comparing to improve accuracy**
+
+Currently it is unimplemented to return an array value's index, or to modify/delete an array value using an index.
 
 ___
 ### (4c) Operators & Inputs
