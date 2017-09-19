@@ -10,7 +10,7 @@
 > Methods with **Write** capabilities have now been completely implemented, and that includes:
 + file.sections [Accepts only arrays]
 + scan.type [Accepts; default/0, advanced/1 or misc/2
-+ title = <input> [Changes the program's main UI title to the input string]
++ title = < input > [Changes the program's main UI title to the input string]
 
 Sections Snippet
 ```js
