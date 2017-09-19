@@ -10,6 +10,7 @@
 > Methods with **Write** capabilities have now been completely implemented, and that includes:
 + file.sections [Accepts only arrays]
 + scan.type [Accepts; default/0, advanced/1 or misc/2
++ title = <input> [Changes the program's main UI title to the input string]
 
 Sections Snippet
 ```js
@@ -22,6 +23,11 @@ scan.type = default
 scan.type = advanced
 scan.type = misc
 ```
+Title Snippet
+```js
+title = This is the new title
+```js
+
 #### [September 19, 2017]
 + Created the snippets folder to gradually add each sector of the code
 + Script arrays can now: Be compared against one another, Search for a value in them, Return all common values between two arrays.
