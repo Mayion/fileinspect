@@ -8,7 +8,7 @@ private bool CompareCustomArrays(string Array1, string Array2, bool IgnoreCase)
 
 		if (List1.Count == List2.Count) //Check if both arrays are identical lenght wise to begin with
 		{
-			if (!(List1.Count == 0) && List2.Count == 0)
+			if (!(List1.Count > 0) && List2.Count > 0)
 			{
 				foreach (var i in List1)
 				{
