@@ -33,3 +33,4 @@ title = This is the new title
 #### [September 19, 2017]
 + Created the snippets folder to gradually add each sector of the code
 + Script arrays can now: Be compared against one another, Search for a value in them, Return all common values between two arrays.
+[Delayed] + Arrays have now moved to a new and more easier format. All array values are now required to have double-brackets surrounding them, **“{...}”**; with each value separated by a coma “,”.
