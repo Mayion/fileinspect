@@ -107,11 +107,11 @@ File Inspect's scripting language strong point is the ability to dodge and fores
 
 Code:
 ```sh
-if file.md5 = 1D420D66250BCAAAED05724FB34008CF//D01628AF9F7FB3F415B357D446FBE6D9//8A4883F5E7AC37444F23279239553878
+if file.md5 = {1D420D66250BCAAAED05724FB34008CF,D01628AF9F7FB3F415B357D446FBE6D9,8A4883F5E7AC37444F23279239553878}
     messagebox [File MD5 matches a trusted Microsoft MD5 signature hash, information]
 ```
 
-**All values in the array list are separated by "//". Any spaces found at the start or end of an array value are ignored when comparing to improve accuracy**
+**All values in the array list are separated by ",". Any spaces found at the start or end of an array value are ignored when comparing to improve accuracy**
 
 Currently it is unimplemented to return an array value's index, or to modify/delete an array value using an index.
 
