@@ -6,7 +6,7 @@ ___
 - Code indenting is only _required_ for the first main "**if statement**", which is on purpose and intended for a more flexible scripting experience. [All code statements/events do not require an indent; **_Check section (2)_**]
 ![Image](https://image.prntscr.com/image/fQKccDyTTuicdmj5ZcbvPw.png)
  
-- Comparing against singular or array values is possible (Example: _"if file.size = 1234"_ or _"if file.size = 1234//5678//8912"_) -- Array values are separated by "//".
+- Comparing against singular or array values is possible (Example: _"if file.size = 1234"_ or _"if file.size = {123, 456, 789}"_) -- Array values are separated by "," and surrounded by double-brackets, **“{xx,yy}”**.
  
 - Retrieving the matched and actual values from the previous met "if statement" is possible by using the keyword **(m)** for the "Matched Value" or **(v)** for the "Actual Value".
 > Matched Value is the input given by the user, however the Actual Value is the absolute one extracted by the program.
